@@ -2,6 +2,8 @@
 
 Creating a web-based application that enables students request for books from a library.
 
+# Technologies to be used:
+    Django with embedded: HTML, CSS, BOOTSTRAP, SQL
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
