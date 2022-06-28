@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% load static %}
+{% block page_content %}
+<h1>Books</h1>
+
+<div class="flex-row">
+{% for book in books %}
+    <div class="content">
+        <div class="img_holder"></div>
+        <div class="content_holder"></div>
+        <div class="lower_div"></div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
