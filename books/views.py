@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .models import Book
+from books.models import Book
 # Create your views here.
 def book_overview(request):
-    books = Book.objects.all().order_by('publication_date')
+    books = Book.objects.all().order_by('-publication_date')
     context = {
         'books': books
     }

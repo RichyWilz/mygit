@@ -5,17 +5,12 @@
 </head>
 <body>
     <nav>
-        <a href="">Bookshelf</a>
-        <a href="">Borrowed Books</a> 
+        <a href="{% url 'book_overview' %}">Bookshelf</a>
+        
     </nav>
 
-    <div class="flex-row">
-        <div class="content">
-            <div class="img_holder"></div>
-            <div class="content_holder"></div>
-            <div class="lower_div"></div>
-        </div>
-    </div>
+
+<div>{% block page_content %}{% endblock %}</div>
 </body>
 
 
