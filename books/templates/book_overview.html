@@ -6,7 +6,7 @@
 <div class="flex-row">
 {% for book in books %}
     <div class="content">
-        <div class="img_holder"><img src="{% static book.cover_photo %}"></div>
+        <div class="img_holder"><img src="{{book.cover_photo.url}}" alt= "bookcover"></div>
         <div class="content_holder">
             <h5>{{ book.title }}</h5>
             <p>{{ book.subject_area }}</p>
