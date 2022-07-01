@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+{% load static %}
+{% block page_content %}
+<h1>Books</h1>
+
+<div class="flex-row">
+{% for book in books %}
+    <div class="content">
+        <div class="img_holder"><img src="{{book.cover_photo.url}}" alt= "bookcover"></div>
+        <div class="content_holder">
+            <h5>{{ book.title }}</h5>
+            <p>{{ book.subject_area }}</p>
+        </div>
+        <div class="lower_div">
+            <a href="{% url 'book_detail' book.pk %}">About</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
