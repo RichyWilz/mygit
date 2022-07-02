@@ -1,23 +1,20 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="base.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>Document</title>
 </head>
 <body>
     <nav>
-        <a href="{% url 'book_overview' %}">Bookshelf</a>
-        <a href="">Borrowed Books</a>
-        <a href="">Due Payments</a>
+        <a class="maina" font-size="60px" href="{% url 'book_overview' %}">Bookshelf</a>
+        <a class="maina" font-size="60px" href="">Borrowed Books</a>
+        <a class="maina"  font-size="60px" href="">Due Payments</a>
     </nav>
-
-
-<div>{% block page_content %}{% endblock %}</div>
+    <div>{% block page_content %}{% endblock %}</div>
 </body>
-
-
-
-
-
-
-
 </html>

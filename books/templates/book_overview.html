@@ -1,20 +1,26 @@
-{% extends "main.html" %}
-{% load static %}
-{% block page_content %}
-<h1>Books</h1>
-
-<div class="flex-row">
-{% for book in books %}
-    <div class="content">
-        <div class="img_holder"><img src="{{book.cover_photo.url}}" alt= "bookcover"></div>
-        <div class="content_holder">
-            <h5>{{ book.title }}</h5>
-            <p>{{ book.subject_area }}</p>
-        </div>
-        <div class="lower_div">
-            <a href="{% url 'book_detail' book.pk %}">About</a>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% extends "main.html" %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    {% block page_content %}
+    <div class="flex-row">
+        {% for book in books %}
+        <div class="cardshape">
+            <img class="overviewimg"  src="{{book.cover_photo.url}}" alt= "bookcover">
+                <h5><strong>{{ book.title }}</strong></h5>
+                <p>Subject: {{ book.subject_area }}</p>
+                <div class="aboutlink"><a href= "{% url 'book_detail' book.pk %}">About</a></div>
+        </div>     
+        {% endfor %}      
     </div>
-    {% endfor %}
-</div>
-{% endblock %}
+    {% endblock %}
+</body>
+</html>
