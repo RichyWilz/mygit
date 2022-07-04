@@ -1,13 +1,15 @@
+from datetime import datetime
 from django.db import models
  #import datetime
 
 # Create your models here.
 class Book(models.Model):
-    title            = models.CharField(max_length=120)
+    title            = models.CharField(max_length=40)
     publication_date = models.DateField()
-    subject_area     = models.CharField(max_length=40)
-    author           = models.CharField(max_length=80)
-     #availability     = models.ForeignKey
+    subject_area     = models.CharField(max_length=15)
+    author           = models.CharField(max_length=40)
     description      = models.TextField()
-    cover_photo      = models.FilePathField(path="/images")
+    cover_photo      = models.ImageField(null=True, blank=True, upload_to='images/')
 
+    def __str__(self) :
+        return self.title

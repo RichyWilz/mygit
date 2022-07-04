@@ -1,0 +1,18 @@
+/*nav*/
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.content
+
+.img_holder{
+    height: 15%;
+}
+
+/*.content_holder
+
+.lower_div*/

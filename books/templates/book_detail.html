@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ book.title }} was published on {{ book.publication_date }}</h1>
+<div >
+    <img src="{{book.cover_photo.url}}" alt="" width="100%">
+</div>
+<div>
+    <h5>Subject</h5>
+    <p>{{ book.subject_area }}</p>
+    <br>
+    <h5>Book details</h5>
+    <p>{{book.description}}</p>
+    <br>
+    <h5>Author</h5>
+    <p>{{book.author}}</p>
+    <br>
+    <a href="">Borrow</a>
+</div>
+    
+
+{% endblock %}
