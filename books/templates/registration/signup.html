@@ -1,4 +1,4 @@
-{% extends 'library_project/regbase.html' %}
+{% extends 'regbase.html' %}
     {% block title %}
         Create account
     {% endblock %}
@@ -14,7 +14,7 @@
                 <br>
             {% endfor %}
             {{form.errors}}
-            <p>Already have an account |<a href="{% url 'login' %}">SignIn Here</a></p>
+            <p>Already have an account |<a href="#">SignIn Here</a></p>
             <button type="submit">sign up</button>
         </form>
     
