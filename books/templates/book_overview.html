@@ -12,7 +12,7 @@
             <p>{{ book.subject_area }}</p>
         </div>
         <div class="lower_div">
-            <a href="{% url 'book_detail' book.pk %}">About</a>
+            <a href="{% url 'books:book_detail' book.pk %}">About</a>
         </div>
     </div>
     {% endfor %}
