@@ -8,7 +8,7 @@ nav{
     align-items: center;
     position: fixed;
     z-index: 1;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 .maina{
     font-size: 20px;
@@ -58,4 +58,11 @@ h5{
     width: 100%;
     font-size: 20px;
     text-decoration: none;
+}
+
+/* The book_detail design */
+.cis{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
 }
