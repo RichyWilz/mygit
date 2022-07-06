@@ -6,7 +6,8 @@ Creating a web-based application that enables students request for books from a 
     Django with embedded: HTML, CSS, BOOTSTRAP, SQL
 
 # Names of the developers
-KEMIGABO CLAIRE
+KEMIGABO CLAIRE,
+NABAGESERA HADIJAH
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
