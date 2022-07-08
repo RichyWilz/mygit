@@ -3,6 +3,9 @@ from books.models import Book
 from django.views import generic
 from django.urls import reverse_lazy
 from .forms import SignUpForm
+from multiprocessing import context
+from .models import Book
+from .forms import BorrowForm 
 
 # Create your views here.
 def book_overview(request):
@@ -23,3 +26,11 @@ class SignUpView(generic.CreateView):
     form_class = SignUpForm
     # success_url = reverse_lazy('login')
     template_name = 'registration/signup.html'
+def borrow(request):
+    form = BorrowForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+    context = {
+        'form': form
+    }
+    return render(request, 'borrow.html',context)

@@ -1,23 +1,36 @@
-{% extends "main.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% extends "main.html" %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
 
-{% block page_content %}
-<h1>{{ book.title }} was published on {{ book.publication_date }}</h1>
-<div >
-    <img src="{{book.cover_photo.url}}" alt="" width="100%">
-</div>
-<div>
-    <h5>Subject</h5>
-    <p>{{ book.subject_area }}</p>
-    <br>
-    <h5>Book details</h5>
-    <p>{{book.description}}</p>
-    <br>
-    <h5>Author</h5>
-    <p>{{book.author}}</p>
-    <br>
-    <a href="">Borrow</a>
-</div>
-    
+    {% block page_content %}
+    <p>{{ book.title }} was published on {{ book.publication_date }}</p>
+    <div class="cis">
+        <div class="imgbook_detail">
+            <img src="{{book.cover_photo.url}}" alt="">
+        </div>
+        <div>
+            <h5>Subject</h5>
+            <p>{{ book.subject_area }}</p>
+            <br>
+            <h5>Book details</h5>
+            <p>{{book.description}}</p>
+            <br>
+            <h5>Author</h5>
+            <p>{{book.author}}</p>
+            <br>
+            <a href="">Borrow</a>
+        </div>
+    </div>
 
-{% endblock %}
+    {% endblock %}
+</body>
+</html>
