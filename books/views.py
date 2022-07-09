@@ -1,11 +1,9 @@
 from multiprocessing import context
 from  django.shortcuts import render
 from .models import Book
-from .forms import BorrowForm 
 from books.models import Book
-from django.views import generic
-from django.urls import reverse_lazy
-from .forms import SignUpForm
+from .forms import BorrowForm
+
 
 # Create your views here.
 def book_overview(request):
@@ -13,14 +11,14 @@ def book_overview(request):
     context = {
         'books': books
     }
-    return render(request, 'book_overview.html', context)
+    return render(request, 'book_temps/book_overview.html', context)
 
 def book_detail(request, pk):
     book = Book.objects.get(pk= pk)
     context = {
         'book': book
     }
-    return render(request,'book_detail.html', context)
+    return render(request,'book_temps/book_detail.html', context)
 
 def borrow(request):
     form = BorrowForm(request.POST or None)
@@ -29,8 +27,6 @@ def borrow(request):
     context = {
         'form': form
     }
-    return render(request, 'borrow.html',context)
-class SignUpView(generic.CreateView):
-    form_class = SignUpForm
-    # success_url = reverse_lazy('login')
-    template_name = 'registration/signup.html'
+    return render(request, 'book_temps/borrow.html',context)
+    
+
