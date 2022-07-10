@@ -11,13 +11,15 @@
 </head>
 <body>
     {% block page_content %}
+    <br>
+    <br>
     <div class="flex-row">
         {% for book in books %}
         <div class="cardshape">
             <img class="overviewimg"  src="{{book.cover_photo.url}}" alt= "bookcover">
                 <h5><strong>{{ book.title }}</strong></h5>
                 <p>Subject: {{ book.subject_area }}</p>
-                <div class="aboutlink"><a href= "{% url 'books:book_detail' book.pk %}">About</a></div>
+                <div class="aboutlinkdiv"><a class="aboutlink" href= "{% url 'books:book_detail' book.pk %}">About</a></div>
         </div>     
         {% endfor %}      
     </div>

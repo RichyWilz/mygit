@@ -1,5 +1,5 @@
-nav{
-    height: 40px;
+.navbar{
+    height: 55px;
     width: 100%;
     background-color: wheat;
     display: flex;
@@ -8,7 +8,7 @@ nav{
     align-items: center;
     position: fixed;
     z-index: 1;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 .maina{
     font-size: 20px;
@@ -52,17 +52,64 @@ p{
 h5{
     font-size: 17px;
 }
-.aboutlink{
+.aboutlinkdiv{
     background-color: wheat;
     height:30px;
     width: 100%;
-    font-size: 20px;
-    text-decoration: none;
+    font-size: 20px;  
+}
+.aboutlink{
+    text-decoration:aqua;
+    margin-left: 75px;
+    border-radius: 3px;
+    line-height: 25px;
 }
 
 /* The book_detail design */
-.cis{
+.rowbook_detail{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
+    width:70%;
+}
+.imgbook_detail{
+    height:72vh;
+    width:auto;
+}
+.contentbook_detail{
+    height:fit-content;
+    width: 50%;
+    background-color: bisque;
+}
+.borrowlink{
+    text-decoration: none;
+    margin-left: 37%;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    width:30%;
+}
+
+/* login design */
+.form-input{
+    font-size:18px;
+    width:70%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: azure;
+    margin-bottom: 30px;
+}
+.form-button{
+    width: fit-content;
+    height: fit-content;
+    border-width: 1px;
+    font-size: 20px;
+    background-color: gray;
+}
+.login{
+    width:50vw;
+    height: 50vh;
+    background-color: wheat;
+}
+.form-control{
+    background-color: blue;
 }

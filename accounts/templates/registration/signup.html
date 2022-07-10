@@ -1,0 +1,37 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "regbase.html" %}
+    {% block title %}
+        Create account
+    {% endblock %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Document 
+    </title>
+</head>
+<body>
+
+{% block page_content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'regbase.css' %}">
+<center>
+    <h2 align="center">Registeration Form</h2>
+    <hr />
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        {% for field in form %}
+        {{form.errors}}
+        {% endfor %}
+        
+        <p>Already have an account |<a href="#">SignIn Here</a></p>
+        <button type="submit">sign up</button>
+    </form>
+</center>
+{% endblock %}
+</body>
+</html>

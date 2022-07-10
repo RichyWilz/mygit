@@ -4,6 +4,16 @@ from django.db import models
 from datetime import date
 
 # Create your models here.
+class Student(models.Model):
+    username   = models.CharField(max_length= 15)
+    first_name = models.CharField(max_length = 30)
+    last_name  = models.CharField(max_length = 30) #help_text= 'Optional')
+    email      = models.EmailField(max_length=200) #help_text = 'Enter valid e-mail address')
+    course     = models.CharField(max_length= 35)
+
+    def __str__(self) :
+        return self.username
+
 class Book(models.Model):
     title            = models.CharField(max_length=40)
     publication_date = models.DateField()
@@ -16,10 +26,10 @@ class Book(models.Model):
     def __str__(self) :
         return self.title
 
- # student_name  = models.ForeignKey(Student, on_delete=models.CASCADE)
+ # )
 class Borrow(models.Model):
-  
-    book_title    = models.ForeignKey(Book, on_delete=models.CASCADE)
+    #student_name  = models.ForeignKey('Student', on_delete=models.CASCADE)
+    book_title    = models.ForeignKey('Book', on_delete=models.CASCADE)
     borrow_date   = models.DateField()
     return_date   = models.DateField()
     email_address = models.EmailField('Email Field',default='somoneone@gmail.com')

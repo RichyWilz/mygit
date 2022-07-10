@@ -8,14 +8,16 @@
         </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        
+        {% load static %}
+        <link  rel="stylesheet" href="{% static 'regbase.css' %}">
     </head>
   
     <body bgcolor="#F9FBE7">
 
   
-        <div class="container">
-            {% block content %}
+        <div>
+            {% block page_content %}
 
             {% endblock%}
         </div>
