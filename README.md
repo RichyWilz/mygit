@@ -6,8 +6,11 @@ Creating a web-based application that enables students request for books from a 
     Django with embedded: HTML, CSS, BOOTSTRAP, SQL
 
 # Names of the developers
-KEMIGABO CLAIRE,
+MUGAGGA BENJAMIN K
+KAYIRA RICHARD W
+KEMIGABO CLAIRE
 NABAGESERA HADIJAH
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
@@ -29,7 +32,7 @@ git push -uf origin main
 ## Integrate with your tools
 
 - [ ] [Set up project integrations](https://gitlab.com/MKBenjie/library-web-group-m/-/settings/integrations)
-
+sofar we have not made any integration 
 ## Collaborate with your team
 
 - [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
@@ -58,11 +61,15 @@ When you're ready to make this README your own, just edit this file and use the 
 Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
 ## Name
-Choose a self-explaining name for your project.
+GROUP M LIBRARY PROJECT 
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
+GROUP M LIBRARY PROJECT is a software based project. The library will have two structures, that is The online library part and the pyscial part.
+The online library Part
+this where students can access the available books in store and make their requests for the identified books,view the available books,access the discription of the books, thats the author,subject area, publication together with the terms and conditions of using the books forexample the rturning date, fines incase of delay to return the book and other related terms.
+THE PHYSICAL LIBRARY
+this is a physical library building were stored who have put their requests for the available books will pick the books from. The librarian will be incharge of givingout books to the students who made orders and and also in charge of library project manage , that is to say collect fines, issue invoices,maintaince and updating the system.
+ students can access the library using https://gitlab.com/MKBenjie/library-web-group-m  
 ## Badges
 On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
@@ -73,26 +80,48 @@ Depending on what you are making, it can be a good idea to include screenshots o
 Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+click on the URL below
+https://gitlab.com/MKBenjie/library-web-group-m  
+it will open up a signup page and click on it, sign up in order to create an account with the library
+and then u can signin in to the library
+and be able to see our dash desk 
+You will be able to view and request for books
+OR you can as well watch our tutorial on hw to use the library
+
 
 ## Support
 Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
+For help incase of any problem, misunderstandings, suquestions,recomedations and suport you can always reachout to the developers of the project on watsup:
+ MUGAGGA BENJAMIN K 0701262414
+KAYIRA RICHARD W 0785477815
+KEMIGABO CLAIRE 0758909539
+NABAGESERA HADIJAH 0709327880
+OR at our email adresses clairekemigabo@gmail.com,
+you can as well as deliver your message to the librarian at the physical library
 ## Roadmap
 If you have ideas for releases in the future, it is a good idea to list them in the README.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+GROUP M LIBRARY is open to contributions and the requirements are for accepting them are as follows.
+1.For people who want to make changes to our project, it's advised to write your views about the project and also reachout to the devlopers.
+2.You should have knowledge about Django and a certification of python language. 
+3 You should also be familiar with html,css and javascript
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
+## testing
 You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+with great honour, the following people are highly appreciated;
+MUGAGGA BENJAMIN K   Project manager 
+KAYIRA RICHARD W     maintainer
+KEMIGABO CLAIRE,     Developer
+NABAGESERA HADIJAH   Developer
+
 
 ## License
 For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+The project is still under supervision and testing.
